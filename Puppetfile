@@ -1,6 +1,6 @@
 mod 'stdlib',
   :git => 'git://github.com/puppetlabs/puppetlabs-stdlib.git',
-  :ref => '4.3.x'
+  :ref => '4.2.1'
 
 mod 'concat',
   :git => 'git://github.com/puppetlabs/puppetlabs-concat.git',
@@ -16,11 +16,15 @@ mod 'ntp',
 
 mod 'apache',
   :git => 'git://github.com/puppetlabs/puppetlabs-apache.git',
-  :ref => '1.0.1'
+  :ref => 'c8bd21a0bfc837bb651ccd3ee4228d9aed168ec1'
 
 mod 'postgresql',
   :git => 'git://github.com/puppetlabs/puppetlabs-postgresql.git',
   :ref => '3.3.3'
+
+mod 'concat_native',
+  :git => 'git://github.com/theforeman/puppet-concat.git',
+  :ref => '1.3.1'
 
 mod 'foreman',
   :git => 'git://github.com/theforeman/puppet-foreman.git',
@@ -46,3 +50,6 @@ mod 'dns',
   :git => 'git://github.com/theforeman/puppet-dns.git',
   :ref => '1.4.0'
 
+mod 'git',
+  :git => 'git://github.com/theforeman/puppet-git.git',
+  :ref => '1.3.1'
