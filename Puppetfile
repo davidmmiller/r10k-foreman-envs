@@ -1,8 +1,6 @@
-forge 'http://forge.puppetlabs.com'
-
 mod 'stdlib',
   :git => 'git://github.com/puppetlabs/puppetlabs-stdlib.git',
-  :ref => 'f90c54e2df6e8cbd8490a59c7429938072dc1b8d'
+  :ref => '4.3.x'
 
 mod 'concat',
   :git => 'git://github.com/puppetlabs/puppetlabs-concat.git',
@@ -16,20 +14,35 @@ mod 'ntp',
   :git => 'git://github.com/puppetlabs/puppetlabs-ntp.git',
   :ref => '3.0.4'
 
-# Temporary fix for Ubuntu 14.04
-mod 'puppetlabs/apache',        :git => 'https://github.com/puppetlabs/puppetlabs-apache',
-                                :ref => 'c8bd21a0bfc837bb651ccd3ee4228d9aed168ec1'
+mod 'apache',
+  :git => 'git://github.com/puppetlabs/puppetlabs-apache.git',
+  :ref => '1.0.1'
 
-# Dependencies
-mod 'puppetlabs/mysql',         '>= 2.2.3 < 2.3.0'
-mod 'puppetlabs/postgresql',    '>= 3.3.3 < 3.4.0'
-mod 'theforeman/concat_native', '>= 1.3.1 < 1.4.0'
-mod 'theforeman/dhcp',          '>= 1.3.1 < 1.4.0'
-mod 'theforeman/dns',           '>= 1.4.0 < 1.5.0'
-mod 'theforeman/git',           '>= 1.3.0 < 1.4.0'
-mod 'theforeman/tftp',          '>= 1.4.1 < 1.5.0'
+mod 'postgresql',
+  :git => 'git://github.com/puppetlabs/puppetlabs-postgresql.git',
+  :ref => '3.3.3'
 
-# Top-level modules
-mod 'theforeman/foreman',       '>= 2.1.0 < 2.2.0'
-mod 'theforeman/foreman_proxy', '>= 1.6.0 < 1.7.0'
-mod 'theforeman/puppet',        '>= 2.1.0 < 2.2.0'
+mod 'foreman',
+  :git => 'git://github.com/theforeman/puppet-foreman.git',
+  :ref => '2.1.3'
+
+mod 'foreman_proxy',
+  :git => 'git://github.com/theforeman/puppet-foreman_proxy.git',
+  :ref => '1.6.1'
+
+mod 'puppet',
+  :git => 'git://github.com/theforeman/puppet-puppet.git',
+  :ref => '2.1.2'
+
+mod 'tftp',
+  :git => 'git://github.com/theforeman/puppet-tftp.git',
+  :ref => '1.4.2'
+
+mod 'dhcp',
+  :git => 'git://github.com/theforeman/puppet-dhcp.git',
+  :ref => '1.3.1'
+
+mod 'dns',
+  :git => 'git://github.com/theforeman/puppet-dns.git',
+  :ref => '1.4.0'
+
