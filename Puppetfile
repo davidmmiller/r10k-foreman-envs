@@ -7,5 +7,6 @@ mod 'apt',
   :ref => '1.4.2'
 
 mod 'ntp',
-  :git => 'git://github.com/puppetlabs/puppetlabs-ntp.git'
+  :git => 'git://github.com/puppetlabs/puppetlabs-ntp.git',
+  :ref => '3.0.4'
 
