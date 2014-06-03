@@ -22,6 +22,10 @@ mod 'postgresql',
   :git => 'git://github.com/puppetlabs/puppetlabs-postgresql.git',
   :ref => '3.3.3'
 
+mod 'mysql',
+  :git => 'git://github.com/puppetlabs/puppetlabs-mysql.git',
+  :ref => '2.3.x'
+
 mod 'concat_native',
   :git => 'git://github.com/theforeman/puppet-concat.git',
   :ref => '1.3.1'
